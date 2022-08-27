@@ -11,7 +11,7 @@ app.use((req, res, next) => {
     next();
   });
 
-const dbURI = "mongodb+srv://bharath:aaasssas@cluster0.hk4en.mongodb.net/placementwebapp?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://@cluster0.hk4en.mongodb.net/placementwebapp?retryWrites=true&w=majority";
 mongoose.connect(dbURI, {useNewUrlParser : true, useUnifiedTopology : true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err));
