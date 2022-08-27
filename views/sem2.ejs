@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        body{
+          background-image: url("pic1.png");
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            font-family: "Quicksand";
+            color: #333;
+        }
+        .topnav {
+        overflow: hidden;
+        background-color: black;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav a:hover {
+        background-color: rgb(250, 151, 2);
+        color: black;
+        }
+
+        .topnav a.active {
+        background-color: rgb(250, 151, 2);
+        color: white;
+        }
+
+        .topnav-right {
+        float: right;
+        }   
+        .center{
+            margin: auto;
+            width: 50%;
+            border: 10px solid rgb(250, 151, 2);
+            padding: 270px 0;
+        }
+        h1 {
+             line-height: 1.5;
+             display: inline-block;
+             vertical-align: middle;
+             color: rgb(250, 151, 2);
+             font-family: Arial, Helvetica, sans-serif;
+            }    
+        p {
+             line-height: 1.5;
+             display: inline-block;
+             vertical-align: middle;
+             color: white
+            } 
+        hr{
+            color: rgb(250, 151, 2);
+        }
+        input{
+            color:white;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 4px;
+            background-color: white;
+        }
+        label{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+    </style>
+    <div class="topnav">
+    <a class="topnav" style="border-radius: 20px;" href="/afterlogin">Back</a>
+  </div>
+    <form action = "/sem2" method="POST">      
+        <br><br>
+        <b style="color: rgb(250, 151, 2); font-family: Arial, Helvetica, sans-serif; font-size: x-large;"> Enter marks for:</b><br>
+          <div id="table1">
+            <div class="row">
+              <div class="col-xs-6">
+                  <label style="color: white"> Engineering Mathematics-II: </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                  <b><input type="number" required name="1" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                  <label>Programming with C: </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                  <b><input  id="2" type="number" required name="2" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                  <label> Engineering Chemistry: </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                  <b><input  id="3" type="number" required name="3" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                  <label> Electronics and Communication Engineering: </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                  <b><input  id="4" type="number" required name="4" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                  <label>Engineering Mechanics:  </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                  <b><input  id="5" type="number" required name="5" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                  <label> Constituitional Ethics: </label>
+              </div>
+              <hr>
+              <div class="col-xs-6">
+                <b><input  id="6" type="number" required name="6" style="color:black;border: solid rgb(250, 151, 2);"></b><br>
+            </div>
+            <hr>
+              <p>Enter your SGPA in sem 2</p>
+              <b><input name = "sgpa" type = "number" step = "0.01" style = "color: black;border: solid rgb(250, 151, 2);" placeholder="Enter your SGPA"></b><br>
+              <b><input name = "srn" type = "text" style = "color: black;border: solid rgb(250, 151, 2);" placeholder="Enter your SRN"></b><br>
+              <div class="col-xs-6">
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="row" style="padding-top:10px;">
+            <!-- <div class="col-xs-8 col-xs-offset-0"><br>
+                <b><input  style="width: 19%;font-size: 15px" id="7" type="number" placeholder="Attendance" required name="attendance" style="width:25%;"></b><br>
+            </div> -->
+          </div>
+          <button class="w3-button w3-green w3-section w3-left" type="submit" style= "background-color:rgb(250, 151, 2); color: white; font-size: 20px;">Enter</button>
+      </form>
+  </div>
+  <div class="col-xs-2">
+    <div class="row"><br>
+      <table style="float: right;margin: 20px 0px">
+        <!-- <tr>
+          <td style="color: rgb(250, 151, 2)">USN &nbsp &nbsp </td> &nbsp &nbsp &nbsp
+          <th class="bb" style="color:rgb(250, 151, 2);text-transform: uppercase;">{{ result[0] }}</th> 
+        </tr>
+        <tr>
+          <td style="color: rgb(250, 151, 2)">SEM</td>
+          <th style="color: rgb(250, 151, 2);text-transform: uppercase;">{{ result[1] }}</th>
+        </tr> -->
+      </table>
+    </div>
+    <div class="row" id="break"></div>
+    <div class="row" id="break"></div>
+    <div class="row" id="button">
+     
+      <!--{% if result[2] %} 
+        <strong><span class="blinking" style="color: darkred;position: absolute;bottom: -50%;right: -5%;font-size: 25px;word-spacing: 0.01em">{{result[2]}}<br> &nbsp &nbsp &nbsp &#8659;</span></strong>
+      {% endif %}
+      <form action="/plot_b1" method="POST">
+        <button id="54"  style="position:absolute;top: 150%;left: 50%;background: none;outline: none;" type="submit" required name="plots"><img src="/static/images/graph_logo.jpg" alt="graph" width="60" height="60"></button><br>
+      -->
+      </form>  
+</html>

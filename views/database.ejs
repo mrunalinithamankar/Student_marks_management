@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Administration</title>
+<style>
+    h3{
+            color:rgb(250, 151, 2);
+            text-transform:capitalize;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    .q{
+        color:white;
+        font-family: "Times New Roman", Times, serif;
+        font-size:25px;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body style="background-color: rgb(39, 43, 53);">
+    <img src="https://www.scylladb.com/wp-content/uploads/database-administrator-diagram.png" alt="dev" class="center">
+    <div class="q">
+        <h3>1. Why is it a bad idea to run a test on a live database?</h3>
+        <p>On a test database, it’s relatively easy to keep the performance variables to a minimum. On a live database however, it needs to be functioning for all users all the time. Running untested code on a production database can not only reduce performance, but also create unforeseen instability in the server itself — potentially causing crashes and data corruption.</p>
+        <h3>2. What is replication?</h3>
+        <p>Database replication allows for real-time automated backups between multiple database servers. This allows for the creation of either a fall-over server, or warm backup for use in case the main server goes down.</p>
+        <h3>3. Is data in databases encrypted by default?</h3>
+        <p>While most database servers support some form of encryption out of the box, it is not enabled by default due to performance hits and security concerns.</p>
+        <h3>4. What is a database schema?</h3>
+        <p>If you’ve ever seen one of those Visio diagrams with 40 different tables with lines connecting particular columns on one with those on another, that’s a database schema. Essentially a two-dimensional representation of how each table talks to other ones, it is the way to view the design of a database as a single entity and not as a jumble of different tables.</p>
+        <h3>5. What are nested queries?</h3>
+        <p>A query within a query, this particular method can be tremendously difficult to troubleshoot and even harder to manage without a lot of overhead. In most cases, a nested query can be replaced with a JOIN, allowing for much more efficient use of resources.</p>
+    </div>
+    </body>

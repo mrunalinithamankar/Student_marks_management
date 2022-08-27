@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <style>
+        body {
+            color: white;
+            background-image: url("pic1.png");
+        }
+        h1{
+            color:rgb(250, 151, 2) ;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .center{
+            margin: auto;
+            width: 100;
+            padding: 180px 0;
+        }
+        center h1 {
+             line-height: 1.5;
+             display: inline-block;
+             vertical-align: middle;
+            }    
+        center p {
+             line-height: 1.5;
+             display: inline-block;
+             vertical-align: middle;
+            }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            text-decoration-color: rgb(250, 151, 2);
+        }    
+        hr{
+            width: 15%;
+            border-top: 1px solid rgb(250, 151, 2);
+        }
+        input {
+            border:0;
+             background:none;
+            display: block;
+             margin: 20px auto;
+            border: 3px solid rgb(250, 151, 2);
+            padding: 14px 10px;
+             width:220px;
+            outline:none;
+            color:white;
+            border-radius: 24px;
+            transition:0.25px;
+            }
+            .button {
+                border:0;
+                background:none;
+                display: block;
+                margin: 20px auto;
+                border: solid rgb(250, 151, 2);
+                padding: 14px 35px;
+                width:220px;
+                outline:none;
+                color:white;
+                border-radius: 24px;
+                transition:0.25px;
+                cursor:pointer;
+                background-color:rgb(250, 151, 2)
+                }
+            .button1:hover{
+                background:rgb(250, 151, 2)
+            }
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            font-family: "Quicksand";
+            color: #333;
+        }
+        .topnav {
+        overflow: hidden;
+        background-color: black;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav a:hover {
+        background-color: rgb(250, 151, 2);
+        border-radius: 20px;
+        color: black;
+        }
+
+        .topnav a.active {
+        background-color: rgb(250, 151, 2);
+        color: white;
+        }
+
+        .topnav-right {
+        float: right;
+        }   
+        
+        
+        
+    </style>
+</head>
+<body style="background-color: rgb(39, 43, 53);">
+    <div class="topnav">
+        <a class="active" href="#home">About the page</a>
+        <div class="topnav-right">
+         
+          <a href="./about">ABOUT</a>
+          <a href="./home">HOME</a>
+          <a href="./login">LOGIN</a>
+        </div>
+      </div>
+      
+      <center>
+    <div class ="center">
+         <h1>JOIN TODAY</h1><hr style="width:20%">
+            <br>
+        
+         <form id="box"  action = "http://127.0.0.1:3000/registrations" method="POST">
+            
+                <input type="text" id="name" name="name" placeholder="NAME" required >
+                
+                <input type="text" id="srn" name="srn" placeholder="USN" required >
+                
+                <input type="text" id="sem" name="sem" placeholder="SEMESTER" required>
+                
+                <input type="text" id="email" name="email" placeholder="EMAIL" required>
+                
+                <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+                
+                <hr>
+                <button type="submit" class="button button1">SignUp</button>
+        </form>
+    </div>
+</center>
+    
+    
+</body>
+</html>
